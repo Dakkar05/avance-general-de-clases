@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+
+    <ui:composition>
+
+        <p:dialog id="SeccionesViewDlg" widgetVar="SeccionesViewDialog" modal="true" resizable="false" appendTo="@(body)" header="#{bundle.ViewSeccionesTitle}">
+            <h:form id="SeccionesViewForm">
+                <h:panelGroup id="display">
+                    <p:panelGrid columns="2" rendered="#{seccionesController.selected != null}">
+                        <h:outputText value="#{bundle.ViewSeccionesLabel_cedula}"/>
+                        <h:outputText value="#{seccionesController.selected.cedula}" title="#{bundle.ViewSeccionesTitle_cedula}"/>
+                        <h:outputText value="#{bundle.ViewSeccionesLabel_nombre}"/>
+                        <h:outputText value="#{seccionesController.selected.nombre}" title="#{bundle.ViewSeccionesTitle_nombre}"/>
+                        <h:outputText value="#{bundle.ViewSeccionesLabel_direccion}"/>
+                        <h:outputText value="#{seccionesController.selected.direccion}" title="#{bundle.ViewSeccionesTitle_direccion}"/>
+                        <h:outputText value="#{bundle.ViewSeccionesLabel_fecha}"/>
+                        <h:outputText value="#{seccionesController.selected.fecha}" title="#{bundle.ViewSeccionesTitle_fecha}"/>
+                        <h:outputText value="#{bundle.ViewSeccionesLabel_telefono}"/>
+                        <h:outputText value="#{seccionesController.selected.telefono}" title="#{bundle.ViewSeccionesTitle_telefono}"/>
+                        <h:outputText value="#{bundle.ViewSeccionesLabel_correo}"/>
+                        <h:outputText value="#{seccionesController.selected.correo}" title="#{bundle.ViewSeccionesTitle_correo}"/>
+                    </p:panelGrid>
+                    <p:commandButton value="#{bundle.Close}" onclick="SeccionesViewDialog.hide()"/>
+                </h:panelGroup>
+            </h:form>
+        </p:dialog>
+
+    </ui:composition>
+</html>

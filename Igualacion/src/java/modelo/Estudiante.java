@@ -65,6 +65,17 @@ public class Estudiante implements Serializable {
     @Column(name = "correo")
     private String correo;
 
+    public Estudiante(String cedula, String nombres, String apellidos, String telefono, String barrio, String ncasa, String direccion, String correo) {
+        this.cedula = cedula;
+        this.nombres = nombres;
+        this.apellidos = apellidos;
+        this.telefono = telefono;
+        this.barrio = barrio;
+        this.ncasa = ncasa;
+        this.direccion = direccion;
+        this.correo = correo;
+    }
+
     public Estudiante() {
     }
 

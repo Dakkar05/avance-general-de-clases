@@ -22,7 +22,7 @@ import modelo.Producto;
 
 /**
  *
- * @author Usuario
+ * @author santiago
  */
 @Stateless
 @Path("modelo.producto")

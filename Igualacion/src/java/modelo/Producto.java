@@ -57,6 +57,15 @@ public class Producto implements Serializable {
     @Column(name = "stock")
     private String stock;
 
+    public Producto(String codProducto, String precios, String tipoProducto, String mateProducto, String nomProducto, String stock) {
+        this.codProducto = codProducto;
+        this.precios = precios;
+        this.tipoProducto = tipoProducto;
+        this.mateProducto = mateProducto;
+        this.nomProducto = nomProducto;
+        this.stock = stock;
+    }
+
     public Producto() {
     }
 

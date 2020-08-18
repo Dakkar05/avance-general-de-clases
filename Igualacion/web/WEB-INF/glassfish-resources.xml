@@ -6,7 +6,7 @@
         <property name="portNumber" value="3306"/>
         <property name="databaseName" value="alumnos"/>
         <property name="User" value="root"/>
-        <property name="Password" value="root"/>
+        <property name="Password" value="Root1234$$"/>
         <property name="useSSL" value="false"/>
         <property name="URL" value="jdbc:mysql://localhost:3306/alumnos?zeroDateTimeBehavior=convertToNull"/>
         <property name="driverClass" value="com.mysql.jdbc.Driver"/>
